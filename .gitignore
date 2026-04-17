@@ -1,0 +1,31 @@
+# Data & generated files
+data/
+faiss_index/
+*.pdf
+check_result.txt
+check_oil_result.txt
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+env/
+*.egg-info/
+dist/
+build/
+
+# HuggingFace model cache
+.cache/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Claude Code
+.claude/
