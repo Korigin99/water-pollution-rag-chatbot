@@ -1,0 +1,31 @@
+# RAG system dependencies
+#
+# STEP 1 - Install PyTorch with CUDA FIRST (run this manually):
+#   pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu128
+#
+# STEP 2 - Then install the rest:
+#   pip install -r requirements.txt
+
+# LangChain
+langchain==0.2.17
+langchain-community==0.2.19
+langchain-core==0.2.43
+
+# PDF parsing
+pypdf==4.3.1
+
+# Embedding model
+sentence-transformers>=3.0.0,<4.0.0
+transformers>=4.40.0,<5.0.0
+huggingface-hub>=0.23.0,<1.0.0
+
+# Vector database (no SQLite required)
+faiss-cpu>=1.7.4
+
+# Utilities (version-pinned for langchain 0.2.x compatibility)
+numpy>=1.26.0,<2.0.0
+packaging>=23.2,<25
+tqdm>=4.66.0
+
+# Web UI
+streamlit>=1.35.0
